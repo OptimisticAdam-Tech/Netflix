@@ -1,0 +1,1008 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/header-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.Nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+    margin: 0px 150px;
+}
+.Logo{
+    cursor: pointer;
+    width: 145px;
+}
+.But button{
+    border:none;
+    padding: 10px 20px;
+    background-color: #e50913;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.But button:hover{
+    transition: ease-in-out 1s;
+    background-color: #af0e19;
+}
+.Info{
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 130px;
+}
+.text h1{
+    font-size: 60px;
+    font-weight: 900;
+    width: 600px;
+}
+.text p,h3{
+    padding: 19px;
+}
+.text p{
+    font-weight: 600;
+}
+
+.mail .mail{
+    border: none;
+    margin-top: 25px;
+    outline: 0;
+    padding: 20px 190px 20px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.mail button{
+    color: white;
+    background-color: #e50913;
+    border: 1px none white;
+    padding: 20px 70px 20px 55px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.line{
+    border: 3.5px solid #d0131f;
+}
+.Trend{
+    margin:40px 200px;
+}
+.opt{
+    padding: 5px 12px;
+}
+.options{
+    padding: 10px 10px;
+    margin: 15px 15px 15px 0px;
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+    background-color: #0f0f0f;
+}
+.all-image .left{
+    border: 1px solid #1a1a1a;
+    width: 30px;
+    margin-inline: auto;
+    border-radius: 9px;
+    height: 130px;
+    margin: 70px 30px;
+}
+.all-image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.all-image .Images{
+    display: flex;
+    width: 71.9%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.all-image .Images h1 {
+    font-size: 105px;
+    font-weight: 700px;
+    position: relative;
+    top: 140px;
+    left: 30px;
+    color: white;  
+}
+.all-image .leftArrow {
+    color: white;
+    position: relative;
+    top: 125px;
+    left: 50px;
+}
+.shape{
+    border: 0px solid;
+    border-radius: 7px;
+    width: 255px;
+    height: 0px;
+}
+.Quotes .texts{
+    background:  linear-gradient(149deg, #192247 0%, #30061a 96.86%);
+    width: 255px;
+    height: 320px;
+    border-radius: 7px;
+    position: relative;
+    top: px;
+}
+.Quotes .texts h2{
+    font-weight: 600;
+    padding: 20px 30px 20px 13px;
+}
+.Quotes .texts h4{
+    font-weight: 900;
+    padding: 20px 13px;
+    font-size: 18px;
+    color: #b6b6c1;
+}
+.Quotes .texts .Tel {
+    font-size: 60px;
+    padding-left: 165px;
+    padding-top: 10px;
+}
+.quotes h1{
+    padding: 90px 0px 10px 190px;
+}
+.Quotes{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+.Quotes .contain{
+    margin: 15px;
+}
+.Faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.Faq h1{
+    font-weight: 500;
+    font-size: 40px;
+}
+.Answers{
+    margin: 60px auto;
+    width: 100%;
+    font-size: 20px;
+}
+.Answers li{
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+}
+.Answers li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+' ;
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+
+.Answers .contents{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.Answers input[type="radio"]:checked + label +.contents{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.Answers input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.Faq .mails{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.Faq small{
+    font-size: 19px;
+    margin-bottom: 80px;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 3px solid #333;
+    color: #777;
+    margin-top: 70px;
+}
+.footer h2{
+    font-size:18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.footer .col{
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 90px;
+}
+.footer .row .col a{
+    display: block;
+    text-decoration: underline;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .language-btn{
+    color: #fff;
+    padding: 13px;
+    border: 0.2px solid white;
+    background-color: #0f0f0f;
+    border-radius: 3px;
+}
+.down{
+    padding-left: 10px;
+}
+.chin{
+    margin-right: 10px;
+    color: white;
+    background-color: white;
+}
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+}
+@media only screen and (max-width: 600px){
+    .Nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0px;
+        margin: 0px 10px;
+    }
+    .Logo{
+        cursor: pointer;
+        width: 95px;
+    }
+    .But button{
+        padding: 5px 10px;
+    }
+    .Info{
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .Info h1{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 130px;
+        width: 100%;
+    }
+    .mail .mail{
+        padding: 15px 10px;
+    }
+    .Info .mail button{
+        padding: 5px 10px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    .Trend{
+        margin:30px 50px;
+    }
+    .options{
+        font-size: 19px;
+        padding: 5px 5px;
+    }
+    .options option{
+        font-size: 7px;
+    }
+    .all-image{
+        height: 950px;
+    }
+    .all-image .Images{
+        display: block;
+        margin-top: 2px;
+        width: fit-content;
+        margin-inline: auto;
+        overflow: scroll;
+    }
+    .all-image .leftArrow,.left{
+        display: none;
+    }
+    .all-image .Images h1 {
+        position: relative;
+        top: 0px; 
+        padding-left: 40px;
+    }
+    .quotes h1{
+        padding-left: 35px;
+    }
+    .Quotes{
+        display: block;
+        width: fit-content;
+        margin-inline: auto;
+    }
+    .Answers{
+        width:fit-content;
+        font-size: 19px !important;
+    }
+    label[for=q5],label[for=q4],label[for=q3],label[for=q2],label[for=q1]{
+        font-size: 17.5px !important;
+    }
+    .Faq .mail input[type=email]{
+        width: 290px !important;
+        margin-inline: auto;
+    }
+    .Faq .mail button{
+        width: 150px !important;
+        padding: 5px 10px;
+        margin-inline: auto;
+        margin: 10px;
+    }
+    .footer .row{
+        display: block;
+    }
+    .footer .row .col{
+        width: 200px;
+        margin-top: 50px;
+    }
+} 
+@media (min-width:960px) and (max-width: 1280px){
+    .Logo{
+        cursor: pointer;
+        width: 195px;
+    }
+    .But button{
+        font-size: 19px;
+        font-weight: 600;
+        padding: 13px 15px;
+    }
+    .Info h1{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 130px;
+        width: 70%;
+        margin-inline: auto;
+        font-weight: 900;
+    }
+    .text p{
+        font-weight: 700;
+        font-weight: 600;
+        font-size: 20.5px;
+        width: 70%;
+        margin-inline: auto;
+    }
+    .mail .mail{
+        font-weight: 800;
+        padding: 23px 12px;
+        width: 450px;
+    }
+    .Info .mail button{
+        padding: 22px 12px;
+        font-size: 22px;
+        width: 190px;
+        margin-left: 7px;
+    }
+    .all-image .Images{
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    .Trend h2{
+        font-size: 34px;
+        margin:0px 0px;
+    }
+    .Trend .options{
+        padding: 15px;
+        font-size: 20px;
+    }
+    .quotes h1{
+        font-size: 27px;
+        font-weight: 500;
+    }
+    .Quotes{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Faq{
+        padding: 10px 5%;
+        font-size: 18px;
+    }
+    .Faq h1{
+        font-size: 35px;
+        font-weight: 800;
+        text-align: left;
+    }
+    .Answers li label{
+        padding: 40px;
+    }
+    label[for=q5],label[for=q4],label[for=q3],label[for=q2],label[for=q1]{
+        font-size: 29px !important;
+        font-weight: 700;
+    }
+    .Answers li .contents{
+       font-size: 30px;
+    }
+    .small{
+        font-size: 25px;
+    }
+    .Faq .mail input[type=email]{
+        width: 530px !important;
+        margin-inline: auto;
+    }
+    .Faq .mail button{
+        width: 199px !important;
+        padding: 25px 10px;
+        margin-inline: auto;
+        margin: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .colo{
+    border: 10px solid #0c112ee5;
+    position: relative;
+    top: -2px;
+    border-bottom-right-radius: 970px;
+    border-bottom-left-radius: 970px;
+}
+ */
